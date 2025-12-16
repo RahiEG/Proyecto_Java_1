@@ -27,7 +27,7 @@ public class Proyecto_2 {
         double calificacionMasBaja = 100;
         double sumaCalificaciones = 0;
         Scanner entrada = new Scanner(System.in);
-        System.out.println("=== SISTEMA DE GESTION DE CALIFICACIONES === \n ");
+        System.out.println("==== SISTEMA DE GESTION DE CALIFICACIONES ==== \n ");
         System.out.print("Ingrese el nombre del estudiante: ");
         nombreEstudiante = entrada.nextLine();
         System.out.print("Ingrese el numero de materias del estudiante: ");
@@ -42,11 +42,11 @@ public class Proyecto_2 {
             calificacion = Double.parseDouble(entrada.nextLine());
             sumaCalificaciones += calificacion;
             if (calificacion < 60) {
-                MateriaAprobadoReprobado = "Reprobada";
+                MateriaAprobadoReprobado = "Reprobada ";
                 cantidadDeMateriasReprobadas++;
 
             } else {
-                MateriaAprobadoReprobado = "Aprobado";
+                MateriaAprobadoReprobado = "Aprobado ";
                 cantidadDeMateriasAprobadas++;
             }
             if (calificacion > calificacionMasAlta) {
@@ -59,12 +59,12 @@ public class Proyecto_2 {
         }
         promedio = sumaCalificaciones / cantidadDeMaterias;
           if (promedio < 60) {
-                AprobadoReprobado = "Reprobada";
+                AprobadoReprobado = "Reprobada ";
             } else {
-                AprobadoReprobado = "Aprobado";
+                AprobadoReprobado = "Aprobado ";
                 }
         entrada.nextLine();
-        System.out.println("=== RESUMEN DE CALIFICACIONES === ");
+        System.out.println("==== RESUMEN DE CALIFICACIONES ==== ");
         System.out.println("Cantidad de materias: " + cantidadDeMaterias);
         System.out.println("Calificacion mas baja: " + calificacionMasBaja);
         System.out.println("Calificacion mas alta: " + calificacionMasAlta);
